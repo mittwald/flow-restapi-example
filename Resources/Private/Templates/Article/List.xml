@@ -1,0 +1,8 @@
+<articles>
+    <f:for each="{articles}" as="article">
+        <article uri="{article.uri}">
+            <name>{article.name}</name>
+            <price>{article.price}</price>
+        </article>
+    </f:for>
+</articles>
