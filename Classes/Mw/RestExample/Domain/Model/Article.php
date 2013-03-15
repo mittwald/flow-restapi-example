@@ -86,12 +86,10 @@ class Article
 
     public function getUri()
     {
-        $config = $this->configurationManager->getConfiguration(\TYPO3\Flow\Configuration\ConfigurationManager::CONFIGURATION_TYPE_SETTINGS);
-        $config = $config['Mw']['Articles'];
+        $config     = $this->configurationManager->getConfiguration(\TYPO3\Flow\Configuration\ConfigurationManager::CONFIGURATION_TYPE_SETTINGS);
+        $uriPattern = $config['Mw']['Articles']['UriPatterns'][get_class($this)];
 
-        $uriPattern = $config['UriPatterns'][get_class($this)];
-
-        return sprintf($uriPattern, $this->persistenceManager->getIdentifierByObject($this));
+        return $config['TYPO3']['Flow']['http']['baseUri'] . sprintf($uriPattern, $this->persistenceManager->getIdentifierByObject($this));
     }
 
 }
