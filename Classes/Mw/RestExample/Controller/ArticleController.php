@@ -1,19 +1,19 @@
 <?php
-namespace Mw\Articles\Controller;
+namespace Mw\RestExample\Controller;
 
 /*                                                                        *
- * This script belongs to the TYPO3 Flow package "Mw.Articles".           *
+ * This script belongs to the TYPO3 Flow package "Mw.RestExample".        *
  *                                                                        *
  *                                                                        */
 
 use TYPO3\Flow\Annotations as Flow;
 use TYPO3\Flow\Mvc\Controller\RestController;
 
-use Mw\Articles\Domain\Model\Article;
+use Mw\RestExample\Domain\Model\Article;
 
 
 /**
- * Article controller for the Mw.Articles package
+ * Article controller for the Mw.RestExample package
  *
  * @Flow\Scope("singleton")
  */
@@ -21,7 +21,7 @@ class ArticleController extends RestController
 {
 
     /**
-     * @var \Mw\Articles\Domain\Repository\ArticleRepository
+     * @var \Mw\RestExample\Domain\Repository\ArticleRepository
      * @Flow\Inject
      */
     protected $articleRepository;

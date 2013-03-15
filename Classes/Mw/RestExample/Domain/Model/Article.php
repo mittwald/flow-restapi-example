@@ -1,8 +1,8 @@
 <?php
-namespace Mw\Articles\Domain\Model;
+namespace Mw\RestExample\Domain\Model;
 
 /*                                                                        *
- * This script belongs to the TYPO3 Flow package "Mw.Articles".           *
+ * This script belongs to the TYPO3 Flow package "Mw.RestExample".        *
  *                                                                        *
  *                                                                        */
 

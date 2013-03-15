@@ -1,4 +1,4 @@
 Mw:
   Articles:
     UriPatterns:
-      'Mw\Articles\Domain\Model\Article': '/articles/%s'
+      'Mw\RestExample\Domain\Model\Article': '/articles/%s'
