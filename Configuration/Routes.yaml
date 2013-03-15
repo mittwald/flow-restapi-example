@@ -1,0 +1,15 @@
+#                                                                        #
+# Default routes configuration for the Mw.RestExample package            #
+#                                                                        #
+
+- name: 'Single Article URI'
+  uriPattern: 'articles/{article.__identity}'
+  defaults:
+    '@package': 'MW.RestExample'
+    '@controller': 'Article'
+
+- name: 'Article List URI'
+  uriPattern: 'articles'
+  defaults:
+    '@package': 'MW.RestExample'
+    '@controller': 'Article'
